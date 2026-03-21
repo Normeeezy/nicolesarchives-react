@@ -8,7 +8,7 @@ export default function App() {
     <div className="page">
       <h1>Nicole Aros</h1>
       <p className="subtitle">Media Studies Major</p>
-      <p>Welcome to my portfolio website. Testing this peace of line here.</p>
+      <p>Welcome to my portfolio website. Testing this piece of line here.</p>
       <p>
         If you are here right now, just know that this is currently a work in
         progress. In the mean time, enjoy my linked in profile pic and a
