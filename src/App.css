@@ -422,8 +422,8 @@ body {
 .contact-title {
   font-family: "Didot", "Playfair Display", Georgia, serif;
   font-weight: 400;
-  font-size: 3rem;
-  color: #1a1a1a;
+  font-size: 3.5rem;
+  color: #000000;
   align-self: flex-start;
   margin: 0 0 40px;
 }
