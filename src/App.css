@@ -296,6 +296,13 @@ body {
   object-fit: contain;
 }
 
+.ce3-logo img {
+  max-height: 185px;
+  max-width: 100%;
+  margin-top: -75px;
+  object-fit: contain;
+}
+
 .bwib-logo img {
   max-height: 115px;
   max-width: 100%;
@@ -309,8 +316,10 @@ body {
   gap: 6px;
   border: 2px solid #000;
   padding: 6px;
-  max-width: 100%;
+  max-width: 60%;
   margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 0px;
 }
 
 .video-cell {
@@ -396,4 +405,76 @@ body {
 .vid-3 {
   grid-column: 1 / -1;
   aspect-ratio: 2 / 1;
+}
+
+/* CONTACT / CONNECT SECTION */
+.contact-section {
+  background:
+    radial-gradient(circle at 20% 30%, #fde4ea 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, #ffb199 0%, transparent 55%),
+    linear-gradient(135deg, #fcd5ce 0%, #f5a7b8 45%, #e58da5 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 40px;
+}
+
+.contact-title {
+  font-family: "Didot", "Playfair Display", Georgia, serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #1a1a1a;
+  align-self: flex-start;
+  margin: 0 0 40px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+}
+
+.contact-label input,
+.contact-label textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  padding: 12px 14px;
+  border: none;
+  background: #fff;
+  border-radius: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.contact-label input:focus,
+.contact-label textarea:focus {
+  outline: 2px solid #1a1a1a;
+}
+
+.contact-submit {
+  align-self: flex-start;
+  background: #2b2b2b;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-submit:hover {
+  background: #000;
 }

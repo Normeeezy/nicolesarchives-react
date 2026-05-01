@@ -40,17 +40,56 @@ export default function App() {
           <p>Welcome to my portfolio website.</p>
           <p>
             If you are here right now, just know that this is currently a work in
-            progress. In the mean time, enjoy my linked in profile pic and a
-            picture of me and my bebe ;)
+            progress. 
+            )
           </p>
           <img className="photo" src={img1} alt="Nicole" />
-          <img className="photo" src={img2} alt="Nicole and bebe" />
         </section>
 
         {/* CONNECT */}
-        <section id="connect" className="section">
-          <h2>Connect</h2>
-          <p>Links, socials, contact info here.</p>
+        <section id="connect" className="section contact-section">
+          <h2 className="contact-title">Connect</h2>
+          <form
+            className="contact-form"
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("Thanks! (form is not wired up yet)");
+            }}
+          >
+            <label className="contact-label">
+              Name *
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name..."
+                required
+              />
+            </label>
+
+            <label className="contact-label">
+              Email Address *
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email Address..."
+                required
+              />
+            </label>
+
+            <label className="contact-label">
+              Message *
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Your Message..."
+                required
+              />
+            </label>
+
+            <button type="submit" className="contact-submit">
+              Submit
+            </button>
+          </form>
         </section>
 
       </div>

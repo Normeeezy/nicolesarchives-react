@@ -13,9 +13,11 @@ const tiles = [
     content: (
       <div className="video-layout">
         <div className="video-logo">
+          <div className="ce3-logo">
           <img src={ce3_full_logo} alt="CE3 logo" />
         </div>
-        <div className="video-grid">
+        </div>
+        <div className="video-grid video-grid-ce3">
           <div className="video-cell vid-1">
             <iframe
               src="https://www.instagram.com/reel/DQIbOLtj7w1/embed/"
@@ -47,12 +49,7 @@ const tiles = [
             </div>
           </div>
           <div className="video-cell vid-3">
-            <iframe
-              src="https://www.youtube.com/embed/Ntgi-cnRFFM"
-              title="YouTube video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            <img src={vid_placeholder3} alt="Vid 3" />
             <div className="video-description">
               <div className="video-role">
                 Role: Produced & Edited
@@ -73,7 +70,7 @@ const tiles = [
           <img src={caltv_logo} alt="CalTV logo" />
         </div>
         </div>
-        <div className="video-grid">
+        <div className="video-grid video-grid-caltv">
           <div className="video-cell vid-3">
             <img src={vid_placeholder3} alt="Vid 3" />
             <div className="video-description">
@@ -84,7 +81,13 @@ const tiles = [
             </div>
           </div>
           <div className="video-cell vid-1">
-            <img src={vid_placeholder} alt="Vid 1" />
+            <iframe
+              src="https://www.instagram.com/reel/DHEtbgbS6w4/embed/"
+              title="Instagram reel"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              scrolling="no"
+            />
             <div className="video-description">
               <div className="video-role">
                 Role: Produced & Edited
@@ -93,7 +96,13 @@ const tiles = [
             </div>
           </div>
           <div className="video-cell vid-2">
-            <img src={vid_placeholder2} alt="Vid 2" />
+            <iframe
+              src="https://www.instagram.com/reel/DN6LcmTEpcm/embed/"
+              title="Instagram reel"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              scrolling="no"
+            />
             <div className="video-description">
               <div className="video-role">
                 Role: Produced & Edited
