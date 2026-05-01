@@ -34,7 +34,8 @@ export default function App() {
 
         {/* ABOUT */}
         <section id="about" className="section">
-          <h1>Nicole Aros</h1>
+          <h1>ABOUT</h1>
+          <h2>Nicole Aros</h2>
           <p className="subtitle">Media Studies Major</p>
           <p>Welcome to my portfolio website.</p>
           <p>
@@ -42,7 +43,6 @@ export default function App() {
             progress. In the mean time, enjoy my linked in profile pic and a
             picture of me and my bebe ;)
           </p>
-
           <img className="photo" src={img1} alt="Nicole" />
           <img className="photo" src={img2} alt="Nicole and bebe" />
         </section>
