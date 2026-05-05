@@ -16,7 +16,7 @@ export default async function handler(req, res) {
   try {
     await resend.emails.send({
       from: "Nicole's Portfolio Connect Form <contact@nicolesarchives.com>",
-      to: "arosnicole5@gmail.com",
+      to: "nicaros2004@gmail.com",
       replyTo: email,
       subject: `${name} wants to connect with you from your portfolio!`,
       html: `
