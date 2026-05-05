@@ -27,3 +27,6 @@ src/assets/placeholder_video.MOV
 src/assets/placeholder_video.MOV
 src/assets/placeholder_video.MOV
 src/assets/placeholder_video.MOV
+.vercel
+.env*.local
+.env

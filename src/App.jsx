@@ -51,9 +51,35 @@ export default function App() {
           <h2 className="contact-title">Connect</h2>
           <form
             className="contact-form"
-            onSubmit={(e) => {
+            onSubmit={async (e) => {
               e.preventDefault();
-              alert("Thanks! (form is not wired up yet)");
+            
+              const form = e.currentTarget;
+            
+              const formData = {
+                name: form.name.value,
+                email: form.email.value,
+                message: form.message.value,
+              };
+            
+              try {
+                const response = await fetch("/api/contact", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(formData),
+                });
+            
+                if (!response.ok) {
+                  throw new Error("Failed to send");
+                }
+            
+                alert("Thank you, your message has been sent!");
+                form.reset();
+              } catch (error) {
+                alert("Something went wrong. Please try again.");
+              }
             }}
           >
             <label className="contact-label">
