@@ -28,7 +28,7 @@ const tiles = [
             />
             <div className="video-description">
               <div className="video-role">
-                Student Interview: Produced & Edited
+                Role: Produced & Edited
               </div>
               Ari's story highlights the story of a first-generation, low-income student and her journey at Cal.
             </div>
@@ -43,18 +43,24 @@ const tiles = [
             />
             <div className="video-description">
               <div className="video-role">
-                Role: Produced & Edited
+                Role: Produced, Filmed & Edited
               </div>
-              Description for video 2 goes here.
+              Student Interview
             </div>
           </div>
           <div className="video-cell vid-3">
-            <img src={vid_placeholder3} alt="Vid 3" />
+          <iframe 
+            src="https://www.youtube.com/embed/Ntgi-cnRFFM"
+            title="CE3 Video 3"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
             <div className="video-description">
               <div className="video-role">
                 Role: Produced & Edited
               </div>
-              Description for video 3 goes here.
+              Collaboration with filming and motion graphics
+
             </div>
           </div>
         </div>
@@ -70,16 +76,7 @@ const tiles = [
           <img src={caltv_logo} alt="CalTV logo" />
         </div>
         </div>
-        <div className="video-grid video-grid-caltv">
-          <div className="video-cell vid-3">
-            <img src={vid_placeholder3} alt="Vid 3" />
-            <div className="video-description">
-              <div className="video-role">
-                Role: Produced & Edited
-              </div>
-              Description for video 3 goes here.
-            </div>
-          </div>
+        <div className="video-grid-caltv">
           <div className="video-cell vid-1">
             <iframe
               src="https://www.instagram.com/reel/DHEtbgbS6w4/embed/"
@@ -92,7 +89,7 @@ const tiles = [
               <div className="video-role">
                 Role: Produced & Edited
               </div>
-              Description for video 1 goes here.
+              Cal Oskis Promo Video
             </div>
           </div>
           <div className="video-cell vid-2">
@@ -107,7 +104,7 @@ const tiles = [
               <div className="video-role">
                 Role: Produced & Edited
               </div>
-              Description for video 2 goes here.
+              CalTV Recruitment Reel
             </div>
           </div>
         </div>
@@ -133,9 +130,9 @@ const tiles = [
             />
             <div className="video-description">
               <div className="video-role">
-                Role: Produced & Edited
+                Role: Filmed
               </div>
-              YouTube video description goes here.
+              Professor Interview
             </div>
           </div>
           <div className="video-cell bwib-vertical">
@@ -148,9 +145,10 @@ const tiles = [
             />
             <div className="video-description">
               <div className="video-role">
-                Role: Produced & Edited
+                Role: Filmed, Produced & Edited
               </div>
-              Instagram reel description goes here.
+              Berkeley Women in Business, Photoshoot Day
+
             </div>
           </div>
         </div>
@@ -192,7 +190,6 @@ export default function Tiles() {
             >
               ×
             </button>
-            <h2 className="modal-title">{openTile.name}</h2>
             <p className="modal-subtitle">{openTile.subtitle}</p>
             <div className="modal-body">{openTile.content}</div>
           </div>
