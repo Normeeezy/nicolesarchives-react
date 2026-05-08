@@ -11,7 +11,7 @@ import afterEffectsLogo from "./assets/framework_logos/after_effects_icon.png";
 import adobe_illustrator_logo from "./assets/framework_logos/adobe_illustrator_logo.png";
 import canva_logo from "./assets/framework_logos/canva.jpg";
 
-import linkedin_logo from "./assets/Linkedin_icon.png";
+import linkedin_logo from "./assets/LinkedIn_icon.png";
 import instagram_logo from "./assets/Instagram_logo.png";
 
 export default function App() {
