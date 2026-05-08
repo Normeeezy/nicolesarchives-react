@@ -6,6 +6,11 @@ import Tiles from "./components/tiles"
 import img1 from "./assets/Nicole_Pfp.JPG";
 import img2 from "./assets/Norman_and_Nicole.JPG";
 
+import premiereLogo from "./assets/framework_logos/premiere_pro_logo.png";
+import afterEffectsLogo from "./assets/framework_logos/after_effects_icon.png";
+import adobe_illustrator_logo from "./assets/framework_logos/adobe_illustrator_logo.png";
+import canva_logo from "./assets/framework_logos/canva.jpg";
+
 export default function App() {
   return (
     <>
@@ -34,16 +39,31 @@ export default function App() {
 
         {/* ABOUT */}
         <section id="about" className="section">
-          <h1>ABOUT</h1>
-          <h2>Nicole Aros</h2>
-          <p className="subtitle">Media Studies Major</p>
-          <p>Welcome to my portfolio website.</p>
-          <p>
-            If you are here right now, just know that this is currently a work in
-            progress. 
-            )
+          <h1 className="about-header">ABOUT ME</h1>
+          <p className="about-description">
+          Hello! I am Nicole Aros, an undergraduate student at the University of California, Berkeley, 
+          originally from the vibrant city of Los Angeles. Growing up in a low-income community shaped 
+          the way I view the world and taught me the importance of diversity, resilience, and 
+          pride in my identity as a Latina. For much of my life, I felt limited by a lack of 
+          resources and representation, but I found comfort and determination through academics, 
+          which ultimately led me to Berkeley. My experiences have inspired me to create spaces 
+          where inclusivity and cultural backgrounds are celebrated, while encouraging others to 
+          believe that their circumstances do not define the possibilities ahead of them.
+          <br/>
+          <br/>
+          During the pandemic, I discovered a passion for storytelling and video editing through the rise of 
+          online fandom communities. As a non-traditional student entering the world of entertainment 
+          and media, I became drawn to the power of visual storytelling and creative expression. 
+          Through my work, I hope to continue giving back to the communities that shaped me while 
+          highlighting stories that inspire connection, representation, and opportunity.
           </p>
           <img className="photo" src={img1} alt="Nicole" />
+          <div className="floating-logo-row">
+            <img src={premiereLogo} alt="Premiere Pro" />
+            <img src={afterEffectsLogo} alt="After Effects" />
+            <img src={adobe_illustrator_logo} alt="Adobe Illustrator" />
+            <img src={canva_logo} alt="Canva" />
+          </div>
         </section>
 
         {/* CONNECT */}
