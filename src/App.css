@@ -714,6 +714,8 @@ body {
   border: 4px solid #000;
 }
 
+/*hope to fix this later */ 
+
 @keyframes floatLogo {
   0% {
     transform: translateY(0);
