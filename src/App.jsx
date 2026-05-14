@@ -64,7 +64,7 @@ export default function App() {
           <div className="branding-carousel">
             <Carousel
               showThumbs={false}
-              showStatus={false}
+              showStatus={true}
               showIndicators={true}
               infiniteLoop={true}
               emulateTouch={true}

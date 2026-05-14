@@ -679,7 +679,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 45px;
+  gap: 20px;
   width: 100%;
 }
 
@@ -693,21 +693,23 @@ body {
 
 
 .branding-side-img {
-  width: clamp(180px, 120vw, 300px);
+  width: auto;
 
-  height: clamp(180px, 25vw, 300px);
+
+  height: clamp(210px, 31vw, 340px);
 
   object-fit: contain;
 
   border: 4px solid #000;
 
-  background: white;
+  box-sizing: border-box;
 
-  display: block;
 }
 
 .branding-carousel {
-  width: min(32vw, 450px);
+  width: auto;
+  height: clamp(210px, 31vw, 340px);
+  object-fit: cover;
   aspect-ratio: 16 / 9;
   border: 4px solid #000;
 }
