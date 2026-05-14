@@ -4,7 +4,6 @@ import Hero from "./components/Hero"
 import Tiles from "./components/tiles"
 
 import img1 from "./assets/Nicole_Pfp.JPG";
-import img2 from "./assets/Norman_and_Nicole.JPG";
 
 import premiereLogo from "./assets/framework_logos/premiere_pro_logo.png";
 import afterEffectsLogo from "./assets/framework_logos/after_effects_icon.png";
@@ -13,6 +12,11 @@ import canva_logo from "./assets/framework_logos/canva.jpg";
 
 import linkedin_logo from "./assets/LinkedIn_icon.png";
 import instagram_logo from "./assets/Instagram_logo.png";
+
+import branding_img1 from "./assets/branding_graphics/branding_1.png";
+import branding_img2 from "./assets/branding_graphics/branding_2.png";
+import branding_img3 from "./assets/branding_graphics/branding_3.png";
+
 
 export default function App() {
   return (
@@ -29,15 +33,20 @@ export default function App() {
       <div className="page">
 
         {/* BRANDING */}
-        <section id="branding" className="section">
-          <h2>Branding</h2>
-          <p>This is where your branding work will go.</p>
-        </section>
+        <section id="branding" className="section branding-section">
+        <h2>Branding</h2>
+        <div className="branding-photos">
+          <img src={branding_img1} alt="Graphic 1" />
+          <img src={branding_img2} alt="Graphic 2" />
+        </div>
+      </section>
 
         {/* VIDEOS */}
         <section id="videos" className="section">
           <h2>Videos</h2>
           <p>This is where your videos will go.</p>
+        <br/>
+          
         </section>
 
         {/* ABOUT */}

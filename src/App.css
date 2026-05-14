@@ -661,6 +661,31 @@ body {
   animation-delay: 0.9s;
 }
 
+.branding-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.branding-photos {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 100px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.branding-photos img {
+  width: 25%;
+  height: 25%;
+  max-height: 75vh;
+  object-fit: cover;
+  border: 4px solid #000;
+  box-sizing: border-box;
+}
+
 @keyframes floatLogo {
   0% {
     transform: translateY(0);
