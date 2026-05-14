@@ -662,28 +662,56 @@ body {
 }
 
 .branding-section {
+  padding: 30px 30px;
+}
+
+.branding-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  /* Give more breathing room on wide screens */
+  margin: 0 0 clamp(24px, 2vw, 52px);
+  letter-spacing: 1px;
+
+  text-align: left;
+}
+
+.branding-row {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding-top: 40px;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
 }
 
 .branding-photos {
   display: flex;
   justify-content: center;
-  align-items: stretch;
-  gap: 100px;
-  width: 100%;
-  max-width: 1300px;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-.branding-photos img {
-  width: 25%;
-  height: 25%;
-  max-height: 75vh;
-  object-fit: cover;
+
+.branding-side-img {
+  width: auto;
+
+
+  height: clamp(210px, 31vw, 340px);
+
+  object-fit: contain;
+
   border: 4px solid #000;
+
   box-sizing: border-box;
+
+}
+
+.branding-carousel {
+  width: auto;
+  height: clamp(210px, 31vw, 340px);
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  border: 4px solid #000;
 }
 
 @keyframes floatLogo {
