@@ -727,6 +727,8 @@ body {
 >>>>>>> 9487aa6cdd0854c32bdbf0eabc50c6fe7190fe64
 }
 
+/*hope to fix this later */ 
+
 @keyframes floatLogo {
   0% {
     transform: translateY(0);
