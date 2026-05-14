@@ -691,21 +691,12 @@ body {
   flex-wrap: wrap;
 }
 
-<<<<<<< HEAD
-.branding-photos img {
-  width: auto;
-
-
-  height: clamp(180px, 28vw, 300px);
-
-=======
 
 .branding-side-img {
   width: auto;
 
 
   height: clamp(210px, 31vw, 340px);
->>>>>>> 9487aa6cdd0854c32bdbf0eabc50c6fe7190fe64
 
   object-fit: contain;
 
@@ -713,9 +704,6 @@ body {
 
   box-sizing: border-box;
 
-<<<<<<< HEAD
-  background: white;
-=======
 }
 
 .branding-carousel {
@@ -724,7 +712,6 @@ body {
   object-fit: cover;
   aspect-ratio: 16 / 9;
   border: 4px solid #000;
->>>>>>> 9487aa6cdd0854c32bdbf0eabc50c6fe7190fe64
 }
 
 @keyframes floatLogo {
