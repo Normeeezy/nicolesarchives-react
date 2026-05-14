@@ -2,6 +2,10 @@ import "./App.css";
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Tiles from "./components/tiles"
+import { useState } from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 
 import img1 from "./assets/Nicole_Pfp.JPG";
 
@@ -15,10 +19,29 @@ import instagram_logo from "./assets/Instagram_logo.png";
 
 import branding_img1 from "./assets/branding_graphics/branding_1.png";
 import branding_img2 from "./assets/branding_graphics/branding_2.png";
-import branding_img3 from "./assets/branding_graphics/branding_3.png";
+import slide1 from "./assets/branding_graphics/slide_1.png";
+import slide2 from "./assets/branding_graphics/slide_2.png";
+import slide3 from "./assets/branding_graphics/slide_3.png";
+import slide4 from "./assets/branding_graphics/slide_4.png";
+import slide5 from "./assets/branding_graphics/slide_5.png";
+
+
 
 
 export default function App() {
+
+  const brandingSlides = [slide1, slide2, slide3, slide4, slide5];
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentSlide((currentSlide + 1) % brandingSlides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide(
+      (currentSlide - 1 + brandingSlides.length) % brandingSlides.length
+    );
+  };
   return (
     <>
       <Header />
@@ -34,10 +57,42 @@ export default function App() {
 
         {/* BRANDING */}
         <section id="branding" className="section branding-section">
-        <h2>Branding</h2>
-        <div className="branding-photos">
-          <img src={branding_img1} alt="Graphic 1" />
-          <img src={branding_img2} alt="Graphic 2" />
+        <h1 className="branding-header">BRANDING</h1>
+
+        <div className="branding-row">
+          <img className="branding-side-img" src={branding_img1} alt="Branding 1" />
+          <div className="branding-carousel">
+            <Carousel
+              showThumbs={false}
+              showStatus={false}
+              showIndicators={true}
+              infiniteLoop={true}
+              emulateTouch={true}
+              swipeable={false}
+              useKeyboardArrows={true}
+            >
+              <div>
+                <img src={slide1} alt="Slide 1" />
+              </div>
+
+              <div>
+                <img src={slide2} alt="Slide 2" />
+              </div>
+
+              <div>
+                <img src={slide3} alt="Slide 3" />
+              </div>
+
+              <div>
+                <img src={slide4} alt="Slide 4" />
+              </div>
+
+              <div>
+                <img src={slide5} alt="Slide 5" />
+              </div>
+            </Carousel>
+          </div>
+          <img className="branding-side-img" src={branding_img2} alt="Branding 2" />
         </div>
       </section>
 
