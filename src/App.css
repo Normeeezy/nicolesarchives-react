@@ -678,12 +678,19 @@ body {
 }
 
 .branding-photos img {
-  width: 25%;
-  height: 25%;
-  max-height: 75vh;
-  object-fit: cover;
+  width: auto;
+
+
+  height: clamp(180px, 28vw, 300px);
+
+
+  object-fit: contain;
+
   border: 4px solid #000;
+
   box-sizing: border-box;
+
+  background: white;
 }
 
 @keyframes floatLogo {
