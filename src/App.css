@@ -236,7 +236,7 @@ body {
 }
 
 .tile:hover {
-  box-shadow: 0 0 50px rgba(245, 198, 214, 0.8);
+  box-shadow: 0 0 50px #001aff;
   transform: scale(1.05);
 }
 
