@@ -114,7 +114,7 @@ export default function App() {
               <div className="about-info">
                 <h3>Nicole Aros</h3>
                 <p>Senior at UC Berkeley</p>
-                <p>Major:Media Studies</p>
+                <p>Major: Media Studies</p>
                 <p>nicaros2004@gmail.com</p>
               </div>
               <div className="about-tools">
