@@ -12,9 +12,9 @@ import img1 from "./assets/Nicole_Pfp.JPG";
 import premiereLogo from "./assets/framework_logos/premiere_pro_logo.png";
 import afterEffectsLogo from "./assets/framework_logos/after_effects_icon.png";
 import adobe_illustrator_logo from "./assets/framework_logos/adobe_illustrator_logo.png";
-import canva_logo from "./assets/framework_logos/canva.jpg";
+import canva_logo from "./assets/framework_logos/canva.png";
 
-import linkedin_logo from "./assets/LinkedIn_icon.png";
+import linkedin_logo from "./assets/Linkedin_logo.png";
 import instagram_logo from "./assets/Instagram_logo.png";
 
 import branding_img1 from "./assets/branding_graphics/branding_1.png";
@@ -111,7 +111,12 @@ export default function App() {
           <div className="about-layout">
             <div className="about-left">
               <img className="about-photo" src={img1} alt="Nicole" />
-
+              <div className="about-info">
+                <h3>Nicole Aros</h3>
+                <p>Senior at UC Berkeley</p>
+                <p>Major:Media Studies</p>
+                <p>nicaros2004@gmail.com</p>
+              </div>
               <div className="about-tools">
                 <img src={premiereLogo} alt="Premiere Pro" />
                 <img src={afterEffectsLogo} alt="After Effects" />
