@@ -3,13 +3,14 @@ import vid_placeholder from "../assets/video_placeholders.jpeg";
 import vid_placeholder2 from "../assets/vid_placeholder2.jpeg";
 import vid_placeholder3 from "../assets/vid_placeholder3.jpeg";
 import ce3_full_logo from "../assets/ce3_full_logo.jpg";
-import caltv_logo from "../assets/caltv_logo.jpg";
+import caltv_logo from "../assets/caltv_logo.png";
 import bwib_logo from "../assets/bwib_logo.png";
 
 
 const tiles = [
   {
     name: "CE3",
+    logo: ce3_full_logo,
     content: (
       <div className="video-layout">
         <div className="video-logo">
@@ -69,11 +70,12 @@ const tiles = [
   },
   {
     name: "CalTV",
+    logo: caltv_logo,
     content: (
       <div className="video-layout">
         <div className="video-logo">
           <div className="caltv-logo">
-          <img src={caltv_logo} alt="CalTV logo" />
+          <img src={caltv_logo} alt="CalTV logo" className="caltv-tile-logo"/>
         </div>
         </div>
         <div className="video-grid-caltv">
@@ -113,6 +115,7 @@ const tiles = [
   },
   {
     name: "BWIB",
+    logo: bwib_logo,
     content: (
       <div className="video-layout">
         <div className="video-logo">
@@ -155,11 +158,6 @@ const tiles = [
       </div>
     ),
   },
-  {
-    name: "Personal",
-    subtitle: "My work aside",
-    content: <p>Personal content goes here.</p>,
-  },
 ];
 
 export default function Tiles() {
@@ -174,8 +172,12 @@ export default function Tiles() {
             className="tile"
             onClick={() => setOpenTile(t)}
           >
-            <span className="tile-name">{t.name}</span>
-            <span className="tile-subtitle">{t.subtitle}</span>
+            <img
+              src={t.logo}
+              alt={t.name}
+              className={`tile-logo ${t.name === "CalTV" ? "caltv-tile-logo" : ""}`}
+
+            />
           </button>
         ))}
       </section>
