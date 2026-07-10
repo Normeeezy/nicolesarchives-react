@@ -27,7 +27,7 @@ import slide5 from "./assets/branding_graphics/slide_5.png";
 
 import filmfreeway_logo from "./assets/branding_logos/filmfreeway-logo.png"
 import frameline_logo from "./assets/branding_logos/frameline-logo.png"
-import goldenVoice_logo from "./assets/branding_logos/goldenVoice-logo.png"
+import goldenVoice_logo from "./assets/branding_logos/goldenvoice-logo.png"
 import greek_theater_logo from "./assets/branding_logos/greek-theatre-logo.webp"
 import kash_logo from "./assets/branding_logos/kash-logo.png"
 
