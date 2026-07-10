@@ -25,6 +25,12 @@ import slide3 from "./assets/branding_graphics/slide_3.png";
 import slide4 from "./assets/branding_graphics/slide_4.png";
 import slide5 from "./assets/branding_graphics/slide_5.png";
 
+import filmfreeway_logo from "./assets/branding_logos/filmfreeway-logo.png"
+import frameline_logo from "./assets/branding_logos/frameline-logo.png"
+import goldenVoice_logo from "./assets/branding_logos/goldenVoice-logo.png"
+import greek_theater_logo from "./assets/branding_logos/greek-theatre-logo.webp"
+import kash_logo from "./assets/branding_logos/kash-logo.png"
+
 
 
 
@@ -57,44 +63,99 @@ export default function App() {
 
         {/* BRANDING */}
         <section id="branding" className="section branding-section">
-        <h1 className="branding-header">BRANDING</h1>
+          <h1 className="branding-header">BRANDING</h1>
 
-        <div className="branding-row">
-          <img className="branding-side-img" src={branding_img1} alt="Branding 1" />
-          <div className="branding-carousel">
-            <Carousel
-              showThumbs={false}
-              showStatus={true}
-              showIndicators={true}
-              infiniteLoop={true}
-              emulateTouch={true}
-              swipeable={false}
-              useKeyboardArrows={true}
-            >
-              <div>
-                <img src={slide1} alt="Slide 1" />
-              </div>
+          <div className="branding-row">
+            <img
+              className="branding-side-img"
+              src={branding_img1}
+              alt="Branding 1"
+            />
 
-              <div>
-                <img src={slide2} alt="Slide 2" />
-              </div>
+            <div className="branding-carousel">
+              <Carousel
+                showThumbs={false}
+                showStatus={true}
+                showIndicators={true}
+                infiniteLoop={true}
+                emulateTouch={true}
+                swipeable={false}
+                useKeyboardArrows={true}
+              >
+                <div>
+                  <img src={slide1} alt="Slide 1" />
+                </div>
 
-              <div>
-                <img src={slide3} alt="Slide 3" />
-              </div>
+                <div>
+                  <img src={slide2} alt="Slide 2" />
+                </div>
 
-              <div>
-                <img src={slide4} alt="Slide 4" />
-              </div>
+                <div>
+                  <img src={slide3} alt="Slide 3" />
+                </div>
 
-              <div>
-                <img src={slide5} alt="Slide 5" />
-              </div>
-            </Carousel>
+                <div>
+                  <img src={slide4} alt="Slide 4" />
+                </div>
+
+                <div>
+                  <img src={slide5} alt="Slide 5" />
+                </div>
+              </Carousel>
+            </div>
+
+            <img
+              className="branding-side-img"
+              src={branding_img2}
+              alt="Branding 2"
+            />
           </div>
-          <img className="branding-side-img" src={branding_img2} alt="Branding 2" />
-        </div>
-      </section>
+
+          <div className="branding-middle-row">
+            <div className="branding-description-box">
+              <h2>Creative Experience</h2>
+
+              <p>
+                My experience includes outreach, social media, event planning,
+                branding, and visual storytelling.
+              </p>
+            </div>
+
+            <div className="branding-orbit-box">
+              <div className="logo-orbit">
+                <img
+                  className="orbit-logo orbit-logo-1"
+                  src={filmfreeway_logo}
+                  alt="FilmFreeway"
+                />
+
+                <img
+                  className="orbit-logo orbit-logo-2"
+                  src={frameline_logo}
+                  alt="Frameline"
+                />
+
+                <img
+                  className="orbit-logo orbit-logo-3"
+                  src={goldenVoice_logo}
+                  alt="Goldenvoice"
+                />
+
+                <img
+                  className="orbit-logo orbit-logo-4"
+                  src={greek_theater_logo}
+                  alt="Greek Theatre"
+                />
+
+                <img
+                  className="orbit-logo orbit-logo-5"
+                  src={kash_logo}
+                  alt="Kash"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* VIDEOS */}
         <section id="videos" className="section">

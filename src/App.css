@@ -756,3 +756,96 @@ body {
     transform: translateY(0);
   }
 }
+
+
+.branding-middle-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 10px auto 0;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+}
+
+.branding-description-box,
+.branding-orbit-box {
+  min-height: 520px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.branding-description-box {
+  border-right: 3px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.branding-description-box h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.branding-description-box p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.branding-orbit-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo-orbit {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.orbit-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: clamp(85px, 10vw, 140px);
+  height: clamp(85px, 10vw, 140px);
+
+  transform-origin: center;
+  object-fit: contain;
+  margin: -35px;
+  animation: companyOrbit 12s linear infinite;
+}
+
+.orbit-logo-1 {
+  animation-delay: 0s;
+}
+
+.orbit-logo-2 {
+  animation-delay: -2.4s;
+}
+
+.orbit-logo-3 {
+  animation-delay: -4.8s;
+}
+
+.orbit-logo-4 {
+  animation-delay: -7.2s;
+}
+
+.orbit-logo-5 {
+  animation-delay: -9.6s;
+}
+
+@keyframes companyOrbit {
+  from {
+    transform: rotate(0deg) translateX(clamp(100px, 15vw, 180px)) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(clamp(100px, 15vw, 180px)) rotate(-360deg);
+  }
+}
