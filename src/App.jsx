@@ -31,6 +31,9 @@ import goldenVoice_logo from "./assets/branding_logos/goldenvoice-logo.png"
 import greek_theater_logo from "./assets/branding_logos/greek-theatre-logo.webp"
 import kash_logo from "./assets/branding_logos/kash-logo.png"
 
+import brandingVid1 from "./assets/branding_videos/Branding_vid1.mp4";
+import brandingVid2 from "./assets/branding_videos/Branding_vid2.mp4";
+
 
 
 
@@ -153,6 +156,27 @@ export default function App() {
                   alt="Kash"
                 />
               </div>
+            </div>
+          </div>
+          <div className="branding-videos-row">
+            <div className="branding-video-item">
+              <p className="branding-video-caption">Cal Oskis Promo Video</p>
+              <video
+                className="branding-video branding-video-portrait"
+                src={brandingVid1}
+                controls
+                playsInline
+              />
+            </div>
+
+            <div className="branding-video-item">
+              <p className="branding-video-caption">CalTV Recruitment Reel</p>
+              <video
+                className="branding-video branding-video-landscape"
+                src={brandingVid2}
+                controls
+                playsInline
+              />
             </div>
           </div>
         </section>
