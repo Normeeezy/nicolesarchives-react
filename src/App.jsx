@@ -170,7 +170,7 @@ export default function App() {
             </div>
 
             <div className="branding-video-item">
-              <p className="branding-video-caption">CalTV Recruitment Reel</p>
+              <p className="branding-video-caption">Film Submission Trailer</p>
               <video
                 className="branding-video branding-video-landscape"
                 src={brandingVid2}
